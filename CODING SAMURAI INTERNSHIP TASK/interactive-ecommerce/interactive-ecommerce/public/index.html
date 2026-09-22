@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ShopSphere — Interactive Store</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="toast" class="toast"></div>
+
+  <header class="topbar">
+    <div class="brand" onclick="scrollToTop()">
+      <span class="logo">S</span>
+      <span>Shop<span>Sphere</span></span>
+    </div>
+    <div class="search-wrap">
+      <input id="search" type="search" placeholder="Search products..." autocomplete="off">
+      <span>⌕</span>
+    </div>
+    <nav>
+      <button class="nav-btn" onclick="openLogin()">Account</button>
+      <button class="cart-btn" onclick="openCart()">Cart <b id="cartCount">0</b></button>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-copy">
+      <p class="eyebrow">NEW SEASON • 2026 COLLECTION</p>
+      <h1>Everything you want.<br><em>One beautiful store.</em></h1>
+      <p class="hero-text">Discover curated tech, lifestyle and everyday essentials with a smooth shopping experience.</p>
+      <div class="hero-actions">
+        <button class="primary" onclick="document.getElementById('products').scrollIntoView({behavior:'smooth'})">Shop now →</button>
+        <button class="ghost" onclick="showOffer()">View today's offer</button>
+      </div>
+      <div class="trust">
+        <span>✓ Secure checkout</span><span>✓ Easy returns</span><span>✓ Fast delivery</span>
+      </div>
+    </div>
+    <div class="hero-art">
+      <div class="orb"></div>
+      <div class="floating-card card-one">⚡<strong>25% OFF</strong><small>Weekend deals</small></div>
+      <div class="floating-card card-two">★ 4.9 <small>Customer rating</small></div>
+      <div class="product-showcase">HEAD<br><b>PHONES</b><small>Premium sound</small></div>
+    </div>
+  </section>
+
+  <section class="categories">
+    <button class="cat active" data-cat="All">All <span>24</span></button>
+    <button class="cat" data-cat="Tech">💻 Tech</button>
+    <button class="cat" data-cat="Fashion">👟 Fashion</button>
+    <button class="cat" data-cat="Home">🏠 Home</button>
+    <button class="cat" data-cat="Accessories">🎒 Accessories</button>
+  </section>
+
+  <main id="products" class="shop">
+    <div class="section-head">
+      <div><p class="eyebrow">CURATED FOR YOU</p><h2>Popular products</h2></div>
+      <select id="sort">
+        <option value="featured">Sort: Featured</option>
+        <option value="low">Price: Low to high</option>
+        <option value="high">Price: High to low</option>
+        <option value="rating">Top rated</option>
+      </select>
+    </div>
+    <div id="grid" class="grid"></div>
+    <div id="empty" class="empty" hidden>No products found. Try another search.</div>
+  </main>
+
+  <section class="newsletter">
+    <div><p class="eyebrow">STAY IN THE LOOP</p><h2>Get exclusive deals.</h2><p>Weekly drops, discounts and product picks.</p></div>
+    <form onsubmit="subscribe(event)"><input id="email" type="email" placeholder="Your email address" required><button class="primary">Subscribe</button></form>
+  </section>
+
+  <footer>
+    <div class="brand"><span class="logo">S</span><span>Shop<span>Sphere</span></span></div>
+    <p>Interactive E-Commerce Project • Built with HTML, CSS, JavaScript & Node.js</p>
+  </footer>
+
+  <div id="cartModal" class="modal">
+    <div class="modal-box cart-box">
+      <button class="close" onclick="closeModal('cartModal')">×</button>
+      <p class="eyebrow">YOUR BAG</p><h2>Shopping cart</h2>
+      <div id="cartItems"></div>
+      <div class="cart-total"><span>Total</span><strong id="cartTotal">₹0</strong></div>
+      <button class="primary wide" onclick="openCheckout()">Proceed to checkout →</button>
+    </div>
+  </div>
+
+  <div id="loginModal" class="modal">
+    <div class="modal-box">
+      <button class="close" onclick="closeModal('loginModal')">×</button>
+      <p class="eyebrow">WELCOME BACK</p><h2>Sign in</h2>
+      <input class="field" id="loginEmail" type="email" placeholder="Email">
+      <input class="field" id="loginPass" type="password" placeholder="Password">
+      <button class="primary wide" onclick="login()">Sign in</button>
+      <p class="small center">Demo account — any email/password works.</p>
+    </div>
+  </div>
+
+  <div id="checkoutModal" class="modal">
+    <div class="modal-box">
+      <button class="close" onclick="closeModal('checkoutModal')">×</button>
+      <p class="eyebrow">CHECKOUT</p><h2>Complete your order</h2>
+      <input class="field" id="name" placeholder="Full name">
+      <input class="field" id="address" placeholder="Delivery address">
+      <input class="field" id="phone" placeholder="Phone number">
+      <div class="payment-demo"><b>💳 Demo payment</b><span>Card • UPI • Wallet</span></div>
+      <button class="primary wide" onclick="placeOrder()">Pay & place order</button>
+    </div>
+  </div>
+
+  <div id="detailsModal" class="modal">
+    <div class="modal-box detail-box">
+      <button class="close" onclick="closeModal('detailsModal')">×</button>
+      <div id="details"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

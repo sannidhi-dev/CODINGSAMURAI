@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Sannidhi S — Computer Science Engineering student, web developer and programmer.">
+  <title>Sannidhi S | CSE Student & Web Developer</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+  <div class="cursor-glow"></div>
+
+  <header class="header" id="header">
+    <nav class="nav container">
+      <a class="brand" href="#home" aria-label="Sannidhi home">
+        <span class="brand-mark">S</span>
+        <span>Sannidhi<span class="accent">.</span></span>
+      </a>
+
+      <div class="nav-links" id="navLinks">
+        <a href="#home" class="nav-link active">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </div>
+
+      <div class="nav-actions">
+        <button class="icon-btn" id="themeBtn" aria-label="Toggle theme">
+          <i class="fa-solid fa-moon"></i>
+        </button>
+        <a class="nav-cta" href="#contact">Let's Talk <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+        <button class="icon-btn menu-btn" id="menuBtn" aria-label="Open menu">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero section" id="home">
+      <div class="hero-grid container">
+        <div class="hero-copy reveal">
+          <div class="eyebrow"><span></span> AVAILABLE FOR INTERNSHIPS</div>
+          <p class="hero-kicker">HELLO, I'M</p>
+          <h1>Sannidhi <span class="gradient-text">S.</span></h1>
+          <h2>Computer Science student & <span id="typingText">Web Developer</span><span class="caret">|</span></h2>
+          <p class="hero-description">
+            I build clean, responsive and interactive web experiences while growing my skills in
+            programming, problem solving and real-world project development.
+          </p>
+
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#projects">Explore my work <i class="fa-solid fa-arrow-right"></i></a>
+            <a class="btn btn-ghost" href="resume.pdf" download>Download CV <i class="fa-solid fa-download"></i></a>
+          </div>
+
+          <div class="hero-links">
+            <a href="https://www.linkedin.com/in/YOUR-LINKEDIN-USERNAME" target="_blank" rel="noopener" aria-label="LinkedIn">
+              <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+            <a href="https://github.com/YOUR-GITHUB-USERNAME" target="_blank" rel="noopener" aria-label="GitHub">
+              <i class="fa-brands fa-github"></i>
+            </a>
+            <a href="mailto:sv497823@gmail.com" aria-label="Email">
+              <i class="fa-solid fa-envelope"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-visual reveal">
+          <div class="orbit orbit-one"></div>
+          <div class="orbit orbit-two"></div>
+          <div class="profile-wrap">
+            <div class="profile-photo">
+              <img src="profile.jpg" alt="Professional photo of Sannidhi S"
+                   onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+              <div class="photo-fallback"><i class="fa-solid fa-user"></i></div>
+            </div>
+          </div>
+          <div class="floating-card card-top">
+            <i class="fa-solid fa-graduation-cap"></i>
+            <div><strong>8.7 CGPA</strong><small>CSE Student</small></div>
+          </div>
+          <div class="floating-card card-bottom">
+            <i class="fa-solid fa-code"></i>
+            <div><strong>6+ Skills</strong><small>Always learning</small></div>
+          </div>
+        </div>
+      </div>
+
+      <a href="#about" class="scroll-hint"><span>Scroll to explore</span><i class="fa-solid fa-arrow-down"></i></a>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="section about" id="about">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span class="section-number">01</span>
+          <div><p>ABOUT ME</p><h2>Building skills with <span class="gradient-text">purpose.</span></h2></div>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-story reveal">
+            <p class="lead">
+              I'm a 2nd-year Computer Science Engineering student focused on turning what I learn
+              into practical projects.
+            </p>
+            <p>
+              I enjoy frontend development, programming and building interfaces that are simple to
+              understand and pleasant to use. I am currently looking for opportunities to learn from
+              experienced teams and contribute to meaningful projects.
+            </p>
+
+            <div class="quick-facts">
+              <div><span>Education</span><strong>Computer Science & Engineering</strong></div>
+              <div><span>Institute</span><strong>Dayananda Sagar Academy</strong></div>
+              <div><span>Academic Score</span><strong>8.7 CGPA</strong></div>
+              <div><span>Focus</span><strong>Web Development & Programming</strong></div>
+            </div>
+          </div>
+
+          <div class="education-card reveal">
+            <div class="edu-icon"><i class="fa-solid fa-building-columns"></i></div>
+            <span class="small-label">CURRENT EDUCATION</span>
+            <h3>Dayananda Sagar Academy</h3>
+            <p>Computer Science & Engineering</p>
+            <div class="edu-meta"><span>2nd Year</span><span class="dot"></span><span>8.7 CGPA</span></div>
+            <div class="edu-line"><span></span></div>
+            <p class="muted">Developing a strong foundation in programming, web technologies and software development.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="section skills" id="skills">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span class="section-number">02</span>
+          <div><p>TECHNICAL SKILLS</p><h2>Tools I use to <span class="gradient-text">build.</span></h2></div>
+        </div>
+
+        <div class="skills-grid">
+          <div class="skill-item reveal"><div class="skill-top"><span><i class="fa-solid fa-c"></i> C</span><b>85%</b></div><div class="bar"><span data-width="85%"></span></div></div>
+          <div class="skill-item reveal"><div class="skill-top"><span><i class="fa-solid fa-code"></i> C++</span><b>80%</b></div><div class="bar"><span data-width="80%"></span></div></div>
+          <div class="skill-item reveal"><div class="skill-top"><span><i class="fa-brands fa-html5"></i> HTML</span><b>90%</b></div><div class="bar"><span data-width="90%"></span></div></div>
+          <div class="skill-item reveal"><div class="skill-top"><span><i class="fa-brands fa-css3-alt"></i> CSS</span><b>85%</b></div><div class="bar"><span data-width="85%"></span></div></div>
+          <div class="skill-item reveal"><div class="skill-top"><span><i class="fa-brands fa-bootstrap"></i> Bootstrap</span><b>80%</b></div><div class="bar"><span data-width="80%"></span></div></div>
+          <div class="skill-item reveal"><div class="skill-top"><span><i class="fa-brands fa-python"></i> Python</span><b>75%</b></div><div class="bar"><span data-width="75%"></span></div></div>
+        </div>
+
+        <div class="tool-pills reveal">
+          <span>JavaScript</span><span>Git</span><span>GitHub</span><span>VS Code</span><span>Responsive Design</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="section projects" id="projects">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span class="section-number">03</span>
+          <div><p>SELECTED WORK</p><h2>Projects that <span class="gradient-text">matter.</span></h2></div>
+        </div>
+
+        <div class="filter-row reveal">
+          <button class="filter active" data-filter="all">All</button>
+          <button class="filter" data-filter="web">Web</button>
+          <button class="filter" data-filter="ai">AI</button>
+          <button class="filter" data-filter="python">Python</button>
+        </div>
+
+        <div class="project-grid">
+          <article class="project-card reveal" data-category="web">
+            <div class="project-art parking"><i class="fa-solid fa-square-parking"></i><span>WEB APP</span></div>
+            <div class="project-body">
+              <div class="project-tag">WEB DEVELOPMENT</div>
+              <h3>Illegal Parking Slot Management</h3>
+              <p>A practical concept for identifying and managing illegal parking spaces with a user-friendly interface.</p>
+              <div class="tech-row"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+            </div>
+          </article>
+
+          <article class="project-card reveal" data-category="ai">
+            <div class="project-art story"><i class="fa-solid fa-film"></i><span>AI PROJECT</span></div>
+            <div class="project-body">
+              <div class="project-tag">AI • STORY • CINEMA</div>
+              <h3>StoryForge AI</h3>
+              <p>An AI-powered cinematic pre-production concept that transforms an idea into stories, characters, scenes and production planning.</p>
+              <div class="tech-row"><span>Node.js</span><span>Express</span><span>AI</span><span>Cloud</span></div>
+            </div>
+          </article>
+
+          <article class="project-card reveal" data-category="web">
+            <div class="project-art portfolio-art"><i class="fa-solid fa-window-maximize"></i><span>PORTFOLIO</span></div>
+            <div class="project-body">
+              <div class="project-tag">WEB DEVELOPMENT</div>
+              <h3>Personal Portfolio</h3>
+              <p>A responsive portfolio built to showcase my education, skills, projects and internship interests.</p>
+              <div class="tech-row"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+            </div>
+          </article>
+
+          <article class="project-card reveal" data-category="python">
+            <div class="project-art python-art"><i class="fa-brands fa-python"></i><span>PYTHON</span></div>
+            <div class="project-body">
+              <div class="project-tag">PROGRAMMING</div>
+              <h3>Python Mini Projects</h3>
+              <p>A growing collection of Python exercises and small applications focused on logic, problem solving and programming fundamentals.</p>
+              <div class="tech-row"><span>Python</span><span>Logic</span><span>Problem Solving</span></div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section contact" id="contact">
+      <div class="container contact-box reveal">
+        <div class="contact-copy">
+          <span class="small-label">04 • CONTACT</span>
+          <h2>Let's build something <span class="gradient-text">great.</span></h2>
+          <p>I'm open to internships, student opportunities, collaborations and interesting projects.</p>
+
+          <div class="contact-links">
+            <a href="mailto:sv497823@gmail.com"><i class="fa-solid fa-envelope"></i><span>sv497823@gmail.com</span></a>
+            <a href="https://www.linkedin.com/in/YOUR-LINKEDIN-USERNAME" target="_blank" rel="noopener"><i class="fa-brands fa-linkedin"></i><span>LinkedIn</span></a>
+            <a href="https://github.com/YOUR-GITHUB-USERNAME" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i><span>GitHub</span></a>
+          </div>
+        </div>
+
+        <form class="contact-form" id="contactForm">
+          <div class="field"><label for="name">Name</label><input id="name" type="text" placeholder="Your name"><small></small></div>
+          <div class="field"><label for="email">Email</label><input id="email" type="email" placeholder="you@example.com"><small></small></div>
+          <div class="field"><label for="message">Message</label><textarea id="message" rows="5" placeholder="Tell me about your opportunity or idea..."></textarea><small></small></div>
+          <button class="btn btn-primary full" type="submit">Send message <i class="fa-solid fa-paper-plane"></i></button>
+          <p id="formStatus" class="form-status"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <a class="brand" href="#home"><span class="brand-mark">S</span><span>Sannidhi<span class="accent">.</span></span></a>
+      <p>Designed & built by Sannidhi S • <span id="year"></span></p>
+      <div class="footer-social">
+        <a href="https://www.linkedin.com/in/YOUR-LINKEDIN-USERNAME" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="https://github.com/YOUR-GITHUB-USERNAME" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-top" id="backTop" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></button>
+  <script src="script.js"></script>
+</body>
+</html>
